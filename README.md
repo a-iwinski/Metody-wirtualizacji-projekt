@@ -1,1 +1,1 @@
-# Metody-wirtualizacji-projekt
+# Inwenetaryzacja sprzętu IT
