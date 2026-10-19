@@ -1,0 +1,33 @@
+<!doctype html>
+<!-- AI: plik przygotowany z pomocą Claude (Anthropic) – szkielet frontendu KM1 -->
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inwentaryzacja sprzętu IT</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 960px; margin: 2rem auto; padding: 0 1rem; color: #222; }
+    h1 { margin-bottom: .25rem; }
+    #status { padding: .5rem .75rem; border-radius: 6px; display: inline-block; margin: 1rem 0; }
+    .ok  { background: #e3f6e5; color: #1b6e2a; }
+    .err { background: #fde8e8; color: #9b1c1c; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { text-align: left; padding: .5rem; border-bottom: 1px solid #ddd; }
+    th { background: #f4f4f4; }
+  </style>
+</head>
+<body>
+  <h1>Inwentaryzacja sprzętu IT</h1>
+  <div id="status">Sprawdzanie połączenia…</div>
+
+  <h2>Urządzenia</h2>
+  <table>
+    <thead>
+      <tr><th>ID</th><th>Nazwa</th><th>Nr seryjny</th><th>Kategoria</th><th>Lokalizacja</th><th>Status</th></tr>
+    </thead>
+    <tbody id="devices"></tbody>
+  </table>
+
+  <script src="app.js"></script>
+</body>
+</html>
