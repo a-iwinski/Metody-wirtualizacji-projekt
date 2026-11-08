@@ -1,0 +1,33 @@
+<!doctype html>
+<!-- AI: plik przygotowany z pomocą Claude (Anthropic) – widok 2: dodawanie / edycja urządzenia -->
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inwentaryzacja sprzętu IT – urządzenie</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav><a href="index.html">Lista urządzeń</a><a href="device.html" class="active">Dodaj urządzenie</a></nav>
+  <h1 id="title">Dodaj urządzenie</h1>
+
+  <form id="form">
+    <label>Nazwa <input name="name" required maxlength="150"></label>
+    <label>Nr seryjny <input name="serial_number" required maxlength="100"></label>
+    <label>Kategoria <select name="category_id" required></select></label>
+    <label>Lokalizacja <select name="location_id" required></select></label>
+    <label>Status
+      <select name="status">
+        <option value="w_uzyciu">w użyciu</option>
+        <option value="w_magazynie">w magazynie</option>
+        <option value="w_naprawie">w naprawie</option>
+        <option value="wycofany">wycofany</option>
+      </select>
+    </label>
+    <button type="submit">Zapisz</button>
+  </form>
+  <div id="msg"></div>
+
+  <script src="device.js"></script>
+</body>
+</html>
